@@ -86,3 +86,11 @@
     cursor: pointer;
     background: rgb(5, 70, 5);
 }
+
+.button button:nth-child(2){
+    background-color: #3eb134;
+}
+
+.button button:nth-child(2):hover{
+    background-color: #045308;
+}

@@ -343,3 +343,20 @@ function generateQuotes() {
 button.addEventListener("click", generateQuotes);
 
 generateQuotes();
+
+function copyText(){
+  const text = quote.innerText
+  navigator.clipboard.writeText(text)
+
+  .then(() => {
+    alert("Kutipan berhasil disalin!");
+  })
+  .catch(err => {
+    alert("Gagal menyalin kutipan.");
+    console.error(err);
+  });
+}
+
+document.getElementById("buttonSalin").addEventListener('click', () => {
+  copyText()
+})
